@@ -1,0 +1,45 @@
+.wrapperSigned {
+  background-color: #234A7D;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  right: 0;
+  width: 48.6rem;
+  animation: showSignedUp .4s;
+  box-shadow: -5px 0px 6px rgba(0, 0, 0, 0.13);
+  @keyframes showSignedUp {
+    from {
+      opacity: 0;
+      width: 0;
+    }
+    to {
+      opacity: 1;
+      width: 48.6rem;
+    }
+  }
+}
+
+.wrapperSigned button {
+  width: 5rem;
+  height: 5rem;
+  margin-left: 40rem;
+}
+
+.containerSigned {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+.containerSigned h1 {
+  font-size: 2.2rem;
+  color: white;
+}
+
+.containerSigned p {
+  font-size: 1.8rem;
+  color: white;
+  margin-left: 3.7rem;
+}
