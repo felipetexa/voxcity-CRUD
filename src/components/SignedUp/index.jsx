@@ -1,5 +1,13 @@
 import './SignedUp.css';
 
+let characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+let result = ''
+let length = 2
+function generateString(){
+for (let i = length; i > 0; --i) result += characters[Math.round(Math.random() * (characters.length - 1))]
+  return result + '-' +result + '-' +result + '-' +result
+}
+
 export default function SignedUp({active}) {
 
   const closeSignedUp = () => {
@@ -16,7 +24,7 @@ export default function SignedUp({active}) {
         <h1>Seu Cadastro foi efetuado com sucesso!</h1>
         <p>Seu id é:</p>
         <p>
-          asdasd
+          {generateString()}
         </p>
       </div>
     </div>
